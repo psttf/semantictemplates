@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/784/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates
+END
+ParameterizedTemplateSystem.scala
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/!svn/ver/784/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/ParameterizedTemplateSystem.scala
+END
+ParameterizedRdfIndividualTemplate.scala
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/!svn/ver/1006/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/ParameterizedRdfIndividualTemplate.scala
+END
+TestableTemplate.scala
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/!svn/ver/784/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/TestableTemplate.scala
+END
+ParameterizedIndividualTemplate.scala
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/!svn/ver/784/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/ParameterizedIndividualTemplate.scala
+END
+MockIndividual.scala
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/!svn/ver/784/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/MockIndividual.scala
+END
+ParameterizedRdfIndividualTemplateSystem.scala
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/!svn/ver/1006/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/ParameterizedRdfIndividualTemplateSystem.scala
+END
+TestableTemplateSystem.scala
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/!svn/ver/784/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/TestableTemplateSystem.scala
+END
+ParameterizedIndividualTemplateSystem.scala
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/!svn/ver/784/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/ParameterizedIndividualTemplateSystem.scala
+END
+Template.scala
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/!svn/ver/784/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/Template.scala
+END
+RdfTemplateSystem.scala
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/!svn/ver/1006/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/RdfTemplateSystem.scala
+END
+TemplateSystem.scala
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/!svn/ver/784/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/TemplateSystem.scala
+END
+Mocker.scala
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/!svn/ver/784/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/Mocker.scala
+END
+RdfIndividualTemplate.scala
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/!svn/ver/1006/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/RdfIndividualTemplate.scala
+END
+RdfConceptTemplate.scala
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/!svn/ver/1006/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/RdfConceptTemplate.scala
+END
+ConceptAndIdRdfTemplate.scala
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/!svn/ver/1006/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/ConceptAndIdRdfTemplate.scala
+END
+IndividualTemplate.scala
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/!svn/ver/784/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/IndividualTemplate.scala
+END
+NoArgsTemplate.scala
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/!svn/ver/784/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/NoArgsTemplate.scala
+END
+RdfIndividualTemplateSystem.scala
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/!svn/ver/1006/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/RdfIndividualTemplateSystem.scala
+END
+ConceptTemplate.scala
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/!svn/ver/784/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/ConceptTemplate.scala
+END
+ConceptAndIdTemplate.scala
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/!svn/ver/784/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/ConceptAndIdTemplate.scala
+END
+RdfConceptAndId.scala
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/!svn/ver/811/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/RdfConceptAndId.scala
+END
+ParameterizedTemplate.scala
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/!svn/ver/784/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/ParameterizedTemplate.scala
+END
+TemplateTestingException.scala
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/!svn/ver/784/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/TemplateTestingException.scala
+END
+ConceptAndIdRdfTemplateSystem.scala
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/!svn/ver/881/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/ConceptAndIdRdfTemplateSystem.scala
+END
+RdfConceptTemplateSystem.scala
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/!svn/ver/1006/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/RdfConceptTemplateSystem.scala
+END
+IndividualTemplateSystem.scala
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/!svn/ver/784/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/IndividualTemplateSystem.scala
+END
+NoArgsTemplateSystem.scala
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/!svn/ver/784/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/NoArgsTemplateSystem.scala
+END
+ConceptAndId.scala
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/!svn/ver/784/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/ConceptAndId.scala
+END
+ConceptTemplateSystem.scala
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/!svn/ver/784/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/ConceptTemplateSystem.scala
+END
+ConceptAndIdTemplateSystem.scala
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/!svn/ver/784/prog/MIFI/Asp/PsDlTemplates/src/org/purl/psnet/semanticWebApp/templates/ConceptAndIdTemplateSystem.scala
+END
