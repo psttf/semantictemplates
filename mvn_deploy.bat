@@ -1,0 +1,1 @@
+mvn deploy:deploy-file -DgroupId=org.purl.psnet.semanticWebApp.templates -DartifactId=Templates -Dversion=0.7 -Dpackaging=jar -Dfile=dist/Templates.jar -Durl=file:///c:/PAVEL/prog/MIFI/Asp/swa/semantictemplates-maven/
