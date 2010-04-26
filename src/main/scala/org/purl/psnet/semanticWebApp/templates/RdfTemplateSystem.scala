@@ -5,7 +5,7 @@ import com.hp.hpl.jena.vocabulary.OWL
 
 import net.croz.scardf._
 
-//TODO: concept д. б. концептом, не ресурсом
+//TODO: concept Рґ. Р±. РєРѕРЅС†РµРїС‚РѕРј, РЅРµ СЂРµСЃСѓСЂСЃРѕРј
 class RdfTemplate(val concept : Res)
 
 class RdfTemplateSystem[TemplateType <: RdfTemplate](
@@ -25,12 +25,17 @@ class RdfTemplateSystem[TemplateType <: RdfTemplate](
           t.concept.jResource.as(classOf[OntClass]).asInstanceOf[OntClass].
             hasEquivalentClass(OWL.Thing)
         ) 0
-      else templates.find(tt => (t.concept != tt.concept) &&
-        (t.concept.jResource.as(classOf[com.hp.hpl.jena.ontology.OntClass]).
+      else templates.filter(tt =>
+          (t.concept != tt.concept) &&
+            (t.concept.jResource.as(classOf[com.hp.hpl.jena.ontology.OntClass]).
             asInstanceOf[com.hp.hpl.jena.ontology.OntClass] hasSuperClass
             tt.concept.jResource)
-        ) match {
-            case Some(tu) => depth(tu) + 1
+        ).sort(depth(_:TemplateType)>depth(_:TemplateType)).firstOption match {
+            case Some(tu) => {
+                Console.println(":::::::::::::::: result is depth(" +
+                                tu.concept.uri + ") + 1" )
+                depth(tu) + 1
+              }
             case _ => 0
           }
       Console.println(":::::::::::::: result = " + result)

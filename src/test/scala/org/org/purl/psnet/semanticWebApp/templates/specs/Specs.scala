@@ -15,6 +15,7 @@ import net.croz.scardf.Res._
 
 import com.hp.hpl.jena.vocabulary.OWL
 import com.hp.hpl.jena.ontology.OntModelSpec
+import com.hp.hpl.jena.ontology.OntClass
 import com.hp.hpl.jena.rdf.model.ModelFactory
 
 class SpecsTest extends JUnit4(Specs)
@@ -33,12 +34,58 @@ object Specs extends Specification {
       Print.testException
     }
   }
-  
-  "TemplateSystem.execute" should { 
+
+  "TemplateSystem.execute" should {
     "correctly choose a template with concept expression" >> {
-      val result = Print.execute(LeoTolstoy)  
+      val result = Print.execute(LeoTolstoy)
 	    result.isEmpty must beFalse
       result.get must beEqualTo("great Leo Tolstoy")
+    }
+  }
+
+  "RdfIndividualTemplateSystem" should {
+    "sort templates if one concept is included in many others" >> {
+      implicit val m = ModelFactory.createOntologyModel(
+        OntModelSpec.OWL_MEM_RDFS_INF
+      )
+      val Animal = m.createClass(ontNS + "Animal")
+      val Mammal = Animal.createSubClass(ontNS + "Mammal")
+      val Elephant = Mammal.createSubClass(ontNS + "Elephant")
+      val Dolphin = Mammal.createSubClass(ontNS + "Dolphin")
+
+      val print : RdfIndividualTemplateSystem[String] =
+        RdfIndividualTemplateSystem(
+          Elephant -> {(i:Res) => "it is an Elephant"},
+          Animal -> {(i:Res) => "it is an Animal"},
+          Mammal -> {(i:Res) => "it is a Mammal"},
+          Dolphin -> {(i:Res) => "it is a Dolphin"}
+        )
+
+      print.execGet(Elephant.createIndividual) must
+        beEqualTo("it is an Elephant")
+      print.execGet(Mammal.createIndividual) must beEqualTo("it is a Mammal")
+      print.execGet(Dolphin.createIndividual) must beEqualTo("it is a Dolphin")
+    }
+  }
+
+  "ClosestRdfClassSelector" should {
+    "select closest class to an individual" >> {
+      implicit val m = ModelFactory.createOntologyModel(
+        OntModelSpec.OWL_MEM_RDFS_INF
+      )
+      val Animal = m.createClass(ontNS + "Animal")
+      val Mammal = Animal.createSubClass(ontNS + "Mammal")
+      val Elephant = Mammal.createSubClass(ontNS + "Elephant")
+      val Dolphin = Mammal.createSubClass(ontNS + "Dolphin")
+
+      val l = List(Animal, Mammal, Elephant, Dolphin)
+
+      ClosestRdfClassSelector(l, Elephant.createIndividual) must
+        beSome[OntClass].which(_ == Elephant)
+      ClosestRdfClassSelector(l, Mammal.createIndividual) must
+        beSome[OntClass].which(_ == Mammal)
+      ClosestRdfClassSelector(l, Dolphin.createIndividual) must
+        beSome[OntClass].which(_ == Dolphin)
     }
   }
   

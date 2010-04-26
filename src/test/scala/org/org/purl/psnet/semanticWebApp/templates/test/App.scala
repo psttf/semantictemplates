@@ -8,7 +8,7 @@ object App {
 
   def main(args : Array[String]) : Unit = {
     //Console.print(WarAndPeace.isSubsumedBy(Book))
-    //<:< работает только в Scala 2.8
+    //<:< СЂР°Р±РѕС‚Р°РµС‚ С‚РѕР»СЊРєРѕ РІ Scala 2.8
 //    Console.print(typeOf(new InverseRole(Wrote)))
 //    Console.println
 //    Console.print(typeOf(new InverseRole(org.purl.psnet.dl.test.Wrote)) <:< typeOf[InverseRole] )
@@ -21,8 +21,8 @@ object App {
 //    Console.println
 //    Console.print(typeOf(org.purl.psnet.dl.test.Book) <:< typeOf[ALIntersect] )
   }
-  
+
   def typeOf[T](x :T)(implicit m: Manifest[T]) : Manifest[T] = m
   def typeOf[T](implicit m: Manifest[T]) : Manifest[T] = m
-  
+
 }
